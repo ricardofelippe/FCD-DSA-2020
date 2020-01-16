@@ -4,6 +4,6 @@
 - Acesso: Via browser  [Azure Page](https://studio.azureml.net/Home/ViewWorkspaceCached/d55caa35009a473990bea94c6763229a?#Workspace/Experiments/ListExperiments/)
 
 - Linguagens:
-  -R
-  -Python
-  -SQL
+  - R
+  - Python
+  - SQL

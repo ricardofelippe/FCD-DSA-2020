@@ -17,6 +17,14 @@
   Definição 7: Modelo Preditivo é uma função matemática **aproximada**, encontrada através do treinamento com dados e que permite fazer previsões.
   - O objetivo do aprendizado de máquina é aprender a aproximação da função f que melhor representa a relação entre os atributos de entrada(chamadas variáveis preditoras) com a variáver target.
   
+ # Principais Métodos de Aprendizagem
+  - Métodos Baseados em Instância
+    - 
+  - Métodos Probabilísticos
+  - Métodos Baseados em Procura
+  - Métodos Baseados em Otimização
+ 
+ 
  
  
  

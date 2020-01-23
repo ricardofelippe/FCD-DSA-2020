@@ -15,6 +15,8 @@
  # Modelo preditivo
   - Identificar com a maior precisão possível o problema de negócio, quanto mais precisa a pergunta, mais precisa será a resposta e, portanto, maior o valor da resposta. 
   Definição 7: Modelo Preditivo é uma função matemática **aproximada**, encontrada através do treinamento com dados e que permite fazer previsões.
+  - O objetivo do aprendizado de máquina é aprender a aproximação da função f que melhor representa a relação entre os atributos de entrada(chamadas variáveis preditoras) com a variáver target.
+  
  
  
  

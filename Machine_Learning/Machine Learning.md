@@ -8,6 +8,15 @@
  
  Definição 4: Aprendizagem Não-Supervisionada é o termo usado quando um programa pode automaticamente encontrar padões e relações em um conjunto de dados. Seu objetivo é organizar os dados de alguma forma ou descrever sua estrutura. Os algoritmos mais comuns são: K-Means, o Singular Value Decomposition(SVD) e o Principal Component Analysis(PCA).
  
+ Definição 5: Modelos Descritivos: prospectam dados históricos buscando gerar conhecimento sobre a massa de dados.
+ 
+ Definição 6: Modelo preditivo é uma função que, aplicada a uma massa de dados, consegue identificar padrões ocultos e prever o que poderá ocorrer.
+ 
+ # Modelo preditivo
+  - Identificar com a maior precisão possível o problema de negócio, quanto mais precisa a pergunta, mais precisa será a resposta e, portanto, maior o valor da resposta. 
+  Definição 7: Modelo Preditivo é uma função matemática **aproximada**, encontrada através do treinamento com dados e que permite fazer previsões.
+ 
+ 
  
  
  
@@ -15,7 +24,7 @@
  
  
  # MACHINE-LEARNING
-
+ 
 :point_right:Algoritmos de aprendizado de máquinas podem ser representados pela seguinte combinação: Representação + Avaliação + Otimização.
 - Representação: Os modelos preditivos devem ser representados de forma que possam ser interpretados pelo computador. Quando escolhemos uma representação, estamos também escolhendo premissas que limitam o que determinado modelo é capaz de aprender. Esse conjunto de possíveis modelos é conhecido como espaço de hipóteses. Esse espaço explica porque alguns modelos não são capazes de aprender determinadas regras.
 - Avaliação: a função de avaliação é utilizada para avaliar modelos dentro de um espaço de hipóteses. Dessa forma, podemos escolher um bom modelo dentre todas as possibilidades.

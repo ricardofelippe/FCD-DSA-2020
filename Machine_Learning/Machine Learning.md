@@ -19,7 +19,14 @@
   
  # Principais Métodos de Aprendizagem
   - Métodos Baseados em Instância
-    - 
+    - Considera a proximidade entre as instâncias na realização das previsões. O conceito por trás é que os dados tendem a estar concentrados em uma mesma região no espaço de entrada. Métodos de aprendizagem baseados em instâncias assumem que as instâncias podem ser representadas como pontos em um espaço Euclidiano. Ponto importante é que podemos usar outras medidas de distância tb, como distância de Manhattan, a qual aplica pesos diferenciados às diversas variáveis do conjunto de dados.
+    - Os métodos de aprendizagem baseados em instâncias são métodos **não paramétricos**(podem ser usadas distribuições arbitrárias sem a suposição de que a forma das entidades sejam conhecidas)
+    - :thumbsdown: Desvantagem: alto custo para classificação. Toda computação ocorre no momento da classificação.
+    - :pushpin: ao contrário das outras abordagens, **não** ocorre a construção de um modelo de classificação explícito. 
+    - :pushpin: teste pode ser intenso computacionamente pois requer comparação com todos os exemplos de treinamento
+    - :star: KNN é o principal representante desta categoria
+    
+    
   - Métodos Probabilísticos
   - Métodos Baseados em Procura
   - Métodos Baseados em Otimização

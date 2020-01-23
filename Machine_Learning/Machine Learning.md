@@ -27,7 +27,15 @@
     - :star: KNN é o principal representante desta categoria
     
     
-  - Métodos Probabilísticos
+  - Métodos Probabilísticos:
+   - Relevantes por dois motivos:
+     - Fornecem algoritmos de aprendizagem práticos: Aprendizagem Naive Bayes/Aprendizagem de Redes Bayesianas/Combinam conhecimento a priori com os dados observados.
+     - Fornecem uma estrutura conceitual útil: fornecem a "norma de ouro"(regra do menor erro possível) para avaliar outros algoritmos de aprendizagem.
+     - :mega: Cada exemplo de treinamento pode decrementar ou incrementar a probabilidade de uma hipótese ser correta.
+     - o classificador 
+     
+     
+     
   - Métodos Baseados em Procura
   - Métodos Baseados em Otimização
  

@@ -6,6 +6,11 @@
  
  Definição 3: Algoritmos de aprendizagem de máquina aprendem a induzir uma função ou hipótese capaz de resolver um problema a partir de dados que representam instâncias(registros de dados do passado) do problema a ser resolvido.
  
+ Definição 4: Aprendizagem Não-Supervisionada é o termo usado quando um programa pode automaticamente encontrar padões e relações em um conjunto de dados. Seu objetivo é organizar os dados de alguma forma ou descrever sua estrutura. Os algoritmos mais comuns são: K-Means, o Singular Value Decomposition(SVD) e o Principal Component Analysis(PCA).
+ 
+ 
+ 
+ 
  
  
  

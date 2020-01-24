@@ -56,14 +56,7 @@
     - SVM(Support Vector Machines)
  
  
- 
- 
- 
- 
- 
- 
- 
- 
+  
  # MACHINE-LEARNING
  
 :point_right:Algoritmos de aprendizado de máquinas podem ser representados pela seguinte combinação: Representação + Avaliação + Otimização.

@@ -106,7 +106,7 @@ DSA-MACHINE LEARNING
         - Decisão binária
         - Discretização(estática, dinâmica)
     - Entropia: medida da incerteza nos dados 
-    - Ganho de Informação: redução da Entropia
+    - Ganho de Informação: indica quanto um determinado atributo sozinho consegue ajudar a classificar a base de dados. Redução da Entropia
     - :exclamation: Nos algoritmos ID3, C4.5 e C5.0, o nó raiz é escolhido com base em quanto do total da Entropia é reduzido, se aquele nó é escolhido.**Isso é chamado de ganho de informação**
     - Ganho de Informação = Entropia do sistema antes da divisão - Entropia do sistema após a divisão.
     - Pruning: Poda da árvore

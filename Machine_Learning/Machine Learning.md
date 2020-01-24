@@ -34,10 +34,11 @@
      - :mega: Cada exemplo de treinamento pode decrementar ou incrementar a probabilidade de uma hipótese ser correta.
      - o classificador 
      
-     
-     
-  - Métodos Baseados em Procura
-  - Métodos Baseados em Otimização
+          
+  - Métodos Baseados em Procura: Pode ser utilizado para a seleção de variáveis no modelo.
+  - Métodos Baseados em Otimização:
+    - Redes Neurais Artificiais
+    - SVM(Support Vector Machines)
  
  
  
@@ -61,6 +62,19 @@
 
 
 DSA-MACHINE LEARNING
+- Técnicas de Redução da Dimensionalidade
+  - Missing Values Ratio: em geral, **50%** ou mais de valores missing indica que devemos eliminar a variável.
+  - Random Forests/Ensemble Trees: aplica-se machine learning para a seleção das variáveis.
+  - Low Variance Filter: Do cálculo da variância da coluna, posso eliminar as que apresentarem baixa variância.
+  - Forward Feature Construction: inicia o treinamento com 01(um) atributo e vai agregando outros atributos(se necessário), avaliando os resultados até chegar no mix de variáveis com melhor performance. 
+  - High Correlation Filter: Minimiza-se o problema de colinearidade.
+  - Backward Feature Elimination:
+  - PCA: :mega: Necessita ser alimentado com dados **normalizados**. Técnica que pode ser utilizada para a geração de índices e agrupamento de indivíduos. A PCA é associada a ideia de redução da massa de dados, com menor perda possível da informação.
+  
+  
+Feature Engineering
+- enriquecimento dos dados: inserir novas informações no dataset para representar informações que não estavam no dataset original.
+- variável dummy: é a representação de uma variável categórica.Realiza-se a conversão de uma variável texto para uma correspondente numérica.  É uma variável fictícia.
 
 - NAIVE BAYES
   - Um dos algoritmos de ML mais usados
@@ -68,8 +82,8 @@ DSA-MACHINE LEARNING
   - Utilizado em medicina em classificadores de textos.
   - Ao treinar o classificador, calcula-se uma distribuição geradora para cada classe. Na fase de classificação, calcula-se qual a distribuição tem a maior probabilidade de ter gerado, por exemplo, cada documento
 
-- MÉTODOS ENSEMBLE
-  - Aprendizado por agrupamento
+- MÉTODOS ENSEMBLE : Grupo de algoritmos de machine learning.
+  - Aprendizado por agrupamento. Uni-se as saídas de diferentes modelos para encontrar a melhor resposta para o problema.
   - Os métodos ensemble selecionam uma coleção de hipóteses e combinam as suas previsões. Ex: geram-se 100 árvores de decisão diferentes que voltam na melhor classificação. 
   - Métodos ensemble consistem em vários modelos trabalhando em conjunto de forma que podemos escolher a melhor opção para nosso método preditivo.
   - Os classificadores ensemble predizem a classe de um registro elegendo a maioria dos votos feitas pelos classificadores base, como que procurando uma segunda, uma terceira opinião. Podemos inputar peso a cada opinião, combinando opiniões e esperando uma combinação mais bem informada de todas as disponíveis.

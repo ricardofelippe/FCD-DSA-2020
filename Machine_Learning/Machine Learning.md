@@ -17,6 +17,21 @@
   Definição 7: Modelo Preditivo é uma função matemática **aproximada**, encontrada através do treinamento com dados e que permite fazer previsões.
   - O objetivo do aprendizado de máquina é aprender a aproximação da função f que melhor representa a relação entre os atributos de entrada(chamadas variáveis preditoras) com a variáver target.
   
+ 
+ # Como Funciona a Aprendizagem de Máquina
+  - Conceito: Um componente chave do processo de aprendizagem é a generalização.
+  - Se um algoritmo de Machine Learning não for capaz de generalizar uma função matemática que faça previsões sobre novos conjuntos de dados, ele não está aprendendo nada e sim memorizando os dados, o que é bem diferente.
+  - Para poder generalizar a funçaõ que melhor resolve um problema, os algoritmos de Machine Learning se baseiam em 3 componentes:
+    - Representação: O algoritmo de ML cria um modelo que apresenta um resultado para um determinado conjunto específico de inputs. A representação é um conjunto de modelos que o algoritmo pode aprender.
+    - Avaliação: determina que modelo funciona melhor para criar o resultado esperado.
+    - Otimização: busca entre os modelos criados, o que melhor gera o resultado esperado.
+  
+ # Elementos Essenciais do Processo de Aprendizagem
+   - Um padrão existe
+   - Não há um único modelo matemático que explique esse padrão
+   - Dados estão disponíveis
+  
+ 
  # Principais Métodos de Aprendizagem
   - Métodos Baseados em Instância
     - Considera a proximidade entre as instâncias na realização das previsões. O conceito por trás é que os dados tendem a estar concentrados em uma mesma região no espaço de entrada. Métodos de aprendizagem baseados em instâncias assumem que as instâncias podem ser representadas como pontos em um espaço Euclidiano. Ponto importante é que podemos usar outras medidas de distância tb, como distância de Manhattan, a qual aplica pesos diferenciados às diversas variáveis do conjunto de dados.

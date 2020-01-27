@@ -84,7 +84,8 @@ Feature Engineering
 - enriquecimento dos dados: inserir novas informações no dataset para representar informações que não estavam no dataset original.
 - variável dummy: é a representação de uma variável categórica.Realiza-se a conversão de uma variável texto para uma correspondente numérica.  É uma variável fictícia.
 
-- KNN (K-Nearest Neighbours) -Me diga com quem andas, que te direi quem és-
+
+KNN (K-Nearest Neighbours) -Me diga com quem andas, que te direi quem és-
   - Considera o voto majoritário entre os rótulos de classe dos k vizinhos mais próximos. O algoritmo utiliza medidas de distância a fim de comparar os pontos de dados. Por exemplo, se k=3, o KNN vai comparar o novo ponto de dado com os 3 vizinhos mais próximos em cada classe e então fazer a votação.
   - É preciso **normalizar(na mesma escala)** os dados antes de aplicar o algoritmo. Isso se deve ao fato de que as medidas de distância são sensíveis à escala dos dados. O principal propósito da medida de distância é identificar os dados que são mais similares e que não são similares. A escolha da medida de distância influencia diretamente a performance de modelos criados com o knn.
   - A precisão da classificação utilizando o algoritmo KNN depende fortemente do modelo de dados. Na maioria das vezes os atributos precisam ser normalizados para evitar que as medidas de distância sejam dominadas por um único atributo.

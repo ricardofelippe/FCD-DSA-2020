@@ -59,6 +59,8 @@
   
  # MACHINE-LEARNING
  
+:point_right: Validação: técnica para avaliar a qualidade do modelo ainda na etapa de treinamento. O dataset usado é um subconjunto dos dados de treinamento.
+ 
 :point_right:Algoritmos de aprendizado de máquinas podem ser representados pela seguinte combinação: Representação + Avaliação + Otimização.
 - Representação: Os modelos preditivos devem ser representados de forma que possam ser interpretados pelo computador. Quando escolhemos uma representação, estamos também escolhendo premissas que limitam o que determinado modelo é capaz de aprender. Esse conjunto de possíveis modelos é conhecido como espaço de hipóteses. Esse espaço explica porque alguns modelos não são capazes de aprender determinadas regras.
 - Avaliação: a função de avaliação é utilizada para avaliar modelos dentro de um espaço de hipóteses. Dessa forma, podemos escolher um bom modelo dentre todas as possibilidades.

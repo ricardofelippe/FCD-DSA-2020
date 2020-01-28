@@ -30,6 +30,8 @@
    - Um padrão existe
    - Não há um único modelo matemático que explique esse padrão
    - Dados estão disponíveis
+   
+ 
   
  
  # Principais Métodos de Aprendizagem
@@ -58,6 +60,9 @@
  
   
  # MACHINE-LEARNING
+ 
+Um modelo de aprendizagem é composto de: Espaço de hipóteses + Algoritmo de Aprendizagem.  O espaço de hipóteses contém os recursos com os quais podemos trabalhar. O algoritmo de aprendizagem recebe os dados e navega pelo espalo de hipóteses a fim de encontrar a melhor hipótese que gera o resultado desejado. Por exemplo, podemos usar o SVM no espaço de hipóteses e back propagation no algoritmo de aprendizagem.
+
  
 :point_right: Validação: técnica para avaliar a qualidade do modelo ainda na etapa de treinamento. O dataset usado é um subconjunto dos dados de treinamento.
  

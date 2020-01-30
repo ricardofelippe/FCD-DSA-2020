@@ -101,7 +101,37 @@ KNN (K-Nearest Neighbours) -Me diga com quem andas, que te direi quem és-
     - Distância Euclidiana: padrão. Usar com medidas numéricas. Trata todas as dimensões de forma igual, tendo com ponto negativo a sua sensibilidade à pontos extremos.
     - Distância de Hamming: Opção para trabalhar com dados **categóricos** . A função principal é verificar se dois atributos são iguais ou não. Quando iguais, a distância é zero. Caso contrário, a distância é 1(um).
   
-  
+- Aprendizagem Não Supervisionada-Clustering
+  - A partir dos dados de entrada, mas sem um conhecimento prévio da saída gerada, é possível descobrir alguns padrões e criar um modelo que seja capaz de automaticamente agrupar os dados de acordo com as similaridades. É necessário uma boa dose de interpretação, necessitando conhecimento dos dados, do negócio e dos detalhes técnicos dos algoritmos. ** A busca dos padrões no KNN não é muito diferente do que é feito pelos humanos**
+  - O principal objetivo da técnica de Clustering é encontrar grupos com máxima homogeneidade dentro do grupo e máxima heteregoneidade entre os grupos.
+  - Como nem sequer sabemos o que estamos procurando, o clustering é usado para a **descoberta de conhecimento**, ao invés de fazer previsões.
+  - A clusterização também é usada na mineração de dados, onde ocorre uma descoberta automática dos padrões.
+  - Exemplo do uso de clusterização:
+    - Segmentação de clientes em grupos com  demografia semelhante ou padrões de compra para campanhas de marketing direcionadas.
+    - Simplificação de grandes conjuntos de dados agrupando características com valores semelhantes em um número menor de categorias homogêneas.
+ - A distância não pode ser a melhor forma para encontrar similaridade entre os dados, tendo em vista que os valores dos atributos podem ser não escalares.
+ - Os rótulos de classe obtidos de um classificador sem supervisão não possuem significado intrínseco.
+ - **Aprendizagem semi-supervisionada**:Se começarmos com dados sem rótulo(sem variável target), podemos usar o clustering para criar rótulos de classe. A partir daí, podemos aplicar algoritmo supervisionado, como árvores de decisão para encontrar os preditores mais importantes dessas classes.
+ - Clustering Hierárquico(agrupamento):
+   - Mais comum
+   - Tem hierarquia. Isso é feito iterativamente mesclando clusters menores em cluster maiores.
+ - Clustering Particional:
+   - Os clusters são gerados e avaliados usando um critério pré-definido específico, que inclusive é específico do domínio, ou seja, da área de negócio de onde os dados foram coletados. Uma vez que cada cluster formado é mutuamente exclusivo, nunca pode haver uma relação hierárquica entre os clusters. Não estamos preocupados com a hierarquia dos clusters,  mas sim com sua independência.
+   
+   -***A qualidade do agrupamento depende do algoritmo escolhido, da função de distância e da aplicação. Diz-se que a qualidade de um modelo de cluster é superior, quando a distância inter-cluster é maximizada e a distância intra-cluster é minimizada. ***
+   
+   
+  - K-Means
+    - Atribui cada um dos n exemplos de dados a um dos k clusters, onde k é um número que foi determinado previamente.
+    - O algoritmo **atribui** exemplos a um conjunto inicial de k clusters.
+    - **Atualiza** as atribuições ajustando os limites de cluster de acordo com os exemplos que estão no cluster.
+    
+    
+    
+    
+   
+ 
+ 
   
   
    

@@ -125,6 +125,13 @@ KNN (K-Nearest Neighbours) -Me diga com quem andas, que te direi quem és-
     - Atribui cada um dos n exemplos de dados a um dos k clusters, onde k é um número que foi determinado previamente.
     - O algoritmo **atribui** exemplos a um conjunto inicial de k clusters.
     - **Atualiza** as atribuições ajustando os limites de cluster de acordo com os exemplos que estão no cluster.
+    - Os centros são selecionados ao acaso dentro do conjunto de dados.
+    - O algoritmo k-means é altamente sensível à posição inicial do centro dos clusters. Ou seja, a forma como é iniciado o treinamento tem um impacto substancial sob o conjunto final de clusters. Solução para este problema é modificar o algoritmo de tal forma a usar métodos diferentes para a escolha dos centros iniciais.
+    - K-means++: método alternativo ao K-means, que propõe um método alternativo para a seleção dos centros de cluster iniciais. Propõe um método eficiente de se aproximar da solução de cluster otimizada.
+    - Às vezes, o número de clusters é definido por requisitos de negócio ou a motivação para a análise. ***Na prática, o conhecimento do problema provavelmente ditará o caminho a ser seguido ***
+    - Sem qualquer conhecimento prévio, uma regra geral sugere que k seja igual à raiz quadrada de (n/2), onde n é o número de exemplos no conjunto de dados. Na grande maioria das vezes, o tipo de problema e o conunto de dados já fornece uma noção do valor ideal de k.
+    
+    
     
     
     

@@ -192,14 +192,23 @@ KNN (K-Nearest Neighbours) -Me diga com quem andas, que te direi quem és-
     - ***Na prática, é na limpeza e na organização dos dados que melhoramos ou pioramos a pureza dos dados(quão organizado os dados estão para que então o algoritmo possa tomar as decisões) ***
     - :exclamation: Nos algoritmos ID3, C4.5 e C5.0, o nó raiz é escolhido com base em quanto do total da **Entropia é reduzido**, se aquele nó é escolhido.**Isso é chamado de ganho de informação**
     - Ganho de Informação = Entropia do sistema antes da divisão - Entropia do sistema após a divisão.
-    - :point: O algoritmo de árvore de decisão realiza o cálculo da entropia antes e depois da divisão em partições e também na escolha dos nós. Com base no ganho de informação o algoritmo decide se um determinado nó é ideal ou não, ajustando o modelo até que o nós que apresentem a menor redução na entropia sejam selecionados.
+    - :point_right: O algoritmo de árvore de decisão realiza o cálculo da entropia antes e depois da divisão em partições e também na escolha dos nós. Com base no ganho de informação o algoritmo decide se um determinado nó é ideal ou não, ajustando o modelo até que o nós que apresentem a menor redução na entropia sejam selecionados.
     - A entropia é aplicada para computar o ganho de informação para todos os atributos. É escolhido o atributo com mais alto ganho de informação. Isso é testado para cada nó a fim de escolher o melhor nó.
+    - Regras de Parada(parâmetros inseridos do algoritmo)
+      - Índice Gini
+      - Qui-Quadrado
+      - Ganho de informação
+      - Redução de variância
     - Pruning: Poda da árvore
-    - Como definir o tamanho correto da árvore: Usando um conjunto de validação.
-    - Usar métodos probabilísticos.
+      - A conclusão da árvore de decisão é concluída antes que uma classificação perfeita dos dados de treinamento seja alcançada. Geral mente ocorre um overfiting nos dados, gerando a necessidade de podar a árvore para tornar o modelo generalizável.
+    
+    - Índice de Gini: usado como regra de parada para construção de uma árvore de decisão. Usado para medir a probabilidade de dois itens aleatórios pertencerem à mesma classe.
+    - Como definir o tamanho correto da árvore? 
+      - Usando um conjunto de validação
+      - Usar métodos probabilísticos(verifica se a poda de um determinado ramo tem uma probabilidade de produzir alguma melhoria no resultado final do modelo)
 
-      - Dados => Regras => Partições => Decisão (Regra de Parada)
-      - O algoritmo usa medidas estatísticas para encontrar as regras e então criar as partições dos dados.
+     - Dados => Regras => Partições => Decisão (Regra de Parada)
+     - O algoritmo usa medidas estatísticas para encontrar as regras e então criar as partições dos dados.
     - Defini-se um conjunto de regras e para cada regra há uma decisão que precisa ser tomada.
     - ***Podem ser usadas para problemas de Classificação e de Regressão.***
     - Considerações:

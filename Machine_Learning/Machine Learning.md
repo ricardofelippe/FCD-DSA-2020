@@ -150,6 +150,8 @@ KNN (K-Nearest Neighbours) -Me diga com quem andas, que te direi quem és-
   - Utilizado em medicina em classificadores de textos.
   - Ao treinar o classificador, calcula-se uma distribuição geradora para cada classe. Na fase de classificação, calcula-se qual a distribuição tem a maior probabilidade de ter gerado, por exemplo, cada documento
 
+
+  
 - MÉTODOS ENSEMBLE : Grupo de algoritmos de machine learning.
   - Aprendizado por agrupamento. Uni-se as saídas de diferentes modelos para encontrar a melhor resposta para o problema.
   - Os métodos ensemble selecionam uma coleção de hipóteses e combinam as suas previsões. Ex: geram-se 100 árvores de decisão diferentes que voltam na melhor classificação. 
@@ -173,28 +175,46 @@ KNN (K-Nearest Neighbours) -Me diga com quem andas, que te direi quem és-
   -PCA: é associada à ideia de redução de massa de dados, com menor perda possível de informação.
 
 - Decision Tree, Random Forest e Métodos Ensemble
-  - Árvores de Desição
+  - Algoritmos utilizados com os modelos de aprendizagem com árvores de decisão: C4.5, C5.0, CART e o ID3
+  - Podemos usar o RandomForest para seleção de atributos, ou seja, podemos usar árvores de decisão não apenas para modelos de ML em si, mas também para aplicar técnicas de feature selection a fim de preparar o dataset para outros algoritmos de ML.
+
+  - Árvores de Decisão: ferramenta de apoio à decisão.
+    - Branch: valores que o Atributo pode assumir
+    - As raizes e os nós são as variáveis a serem avaliadas. O algoritmo aprende como as variáveis estão relacionadas, encontra as regras subjacentes e infere as regras para a montagem da árvore. Dependendo da medida que usarmos na construção do modelo preditivo, diferentes árvores de decisão podem ser geradas.
+    - Como definir o nó raiz e como realizar a divisão do conjunto de dados?
+      - Estratégia Gulosa( Greedy Selection)
+      - Divisão baseadas em atributos nominais(divisão binária e divisão múltipla)
+      - Divisão baseadas em atributos contínuos(Decisão binária, Discretização(estática,dinâmica)
+      
+    - Processos de Aprendizado dos Algoritmos de Árvore de Decisão:
+    - Entropia: medida da incerteza nos dados(grau de impureza no conjunto de dados)
+    - Ganho de Informação: é a redução da entropia. Indica quanto um determinado atributo sozinho consegue ajudar a classificar a base de dados.
+    - ***Na prática, é na limpeza e na organização dos dados que melhoramos ou pioramos a pureza dos dados(quão organizado os dados estão para que então o algoritmo possa tomar as decisões) ***
+    - :exclamation: Nos algoritmos ID3, C4.5 e C5.0, o nó raiz é escolhido com base em quanto do total da **Entropia é reduzido**, se aquele nó é escolhido.**Isso é chamado de ganho de informação**
+    - Ganho de Informação = Entropia do sistema antes da divisão - Entropia do sistema após a divisão.
+    - :point: O algoritmo de árvore de decisão realiza o cálculo da entropia antes e depois da divisão em partições e também na escolha dos nós. Com base no ganho de informação o algoritmo decide se um determinado nó é ideal ou não, ajustando o modelo até que o nós que apresentem a menor redução na entropia sejam selecionados.
+    - A entropia é aplicada para computar o ganho de informação para todos os atributos. É escolhido o atributo com mais alto ganho de informação. Isso é testado para cada nó a fim de escolher o melhor nó.
+    - Pruning: Poda da árvore
+    - Como definir o tamanho correto da árvore: Usando um conjunto de validação.
+    - Usar métodos probabilísticos.
+
+      - Dados => Regras => Partições => Decisão (Regra de Parada)
+      - O algoritmo usa medidas estatísticas para encontrar as regras e então criar as partições dos dados.
     - Defini-se um conjunto de regras e para cada regra há uma decisão que precisa ser tomada.
-    - Podem ser usadas para problemas de Classificação e de Regressão.
-    - Podem ser usadas para problemas de Classificação e de Regressão.
+    - ***Podem ser usadas para problemas de Classificação e de Regressão.***
     - Considerações:
       - Qual atributo dever ser usado para iniciar a árvore?
       - Qua deve ser o atributo seguinte?
-      - Quando parar de construir ramos na árvore(para evitar o overfitting) ?
+      - Quando parar de construir ramos na árvore(para evitar o **overfitting**) ?
     - Como definir o nó raiz e como realizar a divisão do conjunto de dados?
-      - Estratégia Gulosa(Greedy Selection)
+      - Estratégia Gulosa(Greedy Selection)-importante na árvore de decisão para buscar as melhores regras que identificam a combinação entre dados de entrada e dados de saída.
       - Divisão baseada em atributos nominais (divisão binária/divisão múltipla)
       - Divisão baseada em atributos contínuos
         - Decisão binária
         - Discretização(estática, dinâmica)
-    - Entropia: medida da incerteza nos dados 
-    - Ganho de Informação: indica quanto um determinado atributo sozinho consegue ajudar a classificar a base de dados. Redução da Entropia
-    - :exclamation: Nos algoritmos ID3, C4.5 e C5.0, o nó raiz é escolhido com base em quanto do total da Entropia é reduzido, se aquele nó é escolhido.**Isso é chamado de ganho de informação**
-    - Ganho de Informação = Entropia do sistema antes da divisão - Entropia do sistema após a divisão.
-    - Pruning: Poda da árvore
-    - Como definir o tamanho correto da árvore: Usando um conjunto de validação.
-    - Usar métodos probabilísticos.
-    
+        
+        
+        
  
  
  

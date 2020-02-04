@@ -200,7 +200,7 @@ KNN (K-Nearest Neighbours) -Me diga com quem andas, que te direi quem és-
       - Ganho de informação
       - Redução de variância
     - Pruning: Poda da árvore
-      - A conclusão da árvore de decisão é concluída antes que uma classificação perfeita dos dados de treinamento seja alcançada. Geral mente ocorre um overfiting nos dados, gerando a necessidade de podar a árvore para tornar o modelo generalizável.
+      - A conclusão da árvore de decisão é concluída antes que uma classificação perfeita dos dados de treinamento seja alcançada. **Geralmente ocorre um overfiting nos dados**, gerando a necessidade de podar a árvore para tornar o modelo generalizável.
     
     - Índice de Gini: usado como regra de parada para construção de uma árvore de decisão. Usado para medir a probabilidade de dois itens aleatórios pertencerem à mesma classe.
     - Como definir o tamanho correto da árvore? 

@@ -222,6 +222,8 @@ KNN (K-Nearest Neighbours) -Me diga com quem andas, que te direi quem és-
         - Decisão binária
         - Discretização(estática, dinâmica)
         
+  - Resumo livro: Decision Trees: A Guide for Begginers
+    - The decision tree works by picking a criteria and a threshold. The criteria specifies what to split, for instance length or width, and one single criteria is always used. The threshold specifies where to split, i.e. what value to split at.     
         
         
  

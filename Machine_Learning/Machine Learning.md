@@ -145,7 +145,17 @@ KNN (K-Nearest Neighbours) -Me diga com quem andas, que te direi quem és-
   
 
 - NAIVE BAYES
-  - Um dos algoritmos de ML mais usados
+  - Algoritmo ingênuo: assume que a presença ou a ausência de uma determinada característica particular não está relacionado a presença ou a ausência de qualquer outro elemento. Cada variável tem participação independente.
+  - Um dos algoritmos de ML mais usados. ***Dada a relativa facilidade de trabalhar, o algoritmo demanda um forte tratamento nos dados.***
+  - Aplicações:
+    - Previsões multi-classes
+    - Classificação de textos/Filtragem de spam/Análise de sentimento
+    - Previsões em tempo real
+    - Sistemas de recomendação
+   - Naive Bayes no Sckit-Learn
+     - Gaussian: considera que os dados possuem uma distribuição gaussiana
+     - Multinomial: usado para a contagem de variáveis discretas
+     - Bernoulli: útil se os vetores de dados são binários
   - Utilizados com grande/médios conjunto de treinamento e os atributos que descrevem as instâncias são condicionalmente independentes(a informação de um evento não é informativa sob nenhum outro)
   - Utilizado em medicina em classificadores de textos.
   - Ao treinar o classificador, calcula-se uma distribuição geradora para cada classe. Na fase de classificação, calcula-se qual a distribuição tem a maior probabilidade de ter gerado, por exemplo, cada documento
